@@ -9,4 +9,8 @@ namespace Animals
             Console.WriteLine("Hello World!");
         }
     }
+    public class Animals
+    {
+    
+    }
 }
