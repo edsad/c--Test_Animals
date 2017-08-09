@@ -13,4 +13,9 @@ namespace Animals
     {
     
     }
+
+    public class Dogs
+    {
+        
+    }
 }
