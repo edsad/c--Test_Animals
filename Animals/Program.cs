@@ -81,6 +81,42 @@ namespace Animals
         {
             return 7;
         }
+
+        public double ThisFast4 (double fast)
+        {
+            return 10;
+        }
+
+        public double ThisFast5 (double fast)
+        {
+            return 12;
+        }
+        // public bool AddNewName (String Dog);
+    
+        
+        }
     }
-}
+
+    public class Cat
+    {
+        public string Name { get; set; } = "";
+        public string Species { get; set; } = "";
+        public double Walk { get; set; } = 0.0;
+
+        public double ThisFast6 (double Fast)
+        {
+            return 15;
+        }
+
+        public string Species4 (string NewKind)
+        {
+            return NewKind;
+        }
+
+        public string ReName1 (string AnotherName1)
+        {
+            return AnotherName1;
+        }
+
+    }
 

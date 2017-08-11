@@ -7,11 +7,13 @@ namespace Animals.Tests
     {
         private Animal _animal;
         private Dog _doge;
+        private Cat _cat;
         
         public AnimalShould()
         {
             _animal = new Animal();
             _doge = new Dog();
+            _cat = new Cat();
         }
 
         [Fact]
@@ -96,6 +98,51 @@ namespace Animals.Tests
         {
             double HowFast3 = _doge.ThisFast3(7);
             Assert.Equal(HowFast3, 7);
+        }
+
+        [Fact]
+        public void HowFast4()
+        {
+            double HowFast4 = _doge.ThisFast4(10);
+            Assert.Equal(HowFast4, 10);
+        }
+
+        [Fact]
+        public void HowFast5()
+        {
+            double HowFast5 = _doge.ThisFast5(12);
+            Assert.Equal(HowFast5, 12);
+        }
+
+        // [Theory]
+        // [InLineData ("Rover")]
+        // [InlineData ("Spike")]
+        // [InlineData ("Spot")]
+
+        // public void AddNewName(string Dog)
+        // {
+        //     var result = _doge.AddNewName (Dog);
+        //     Assert.True (result);
+        // }
+        [Fact]
+        public void HowFast6()
+        {
+            double HowFast6 = _cat.ThisFast6(15);
+            Assert.Equal(HowFast6, 15);
+        }
+
+        [Fact]
+        public void WhatSpecies4()
+        {
+            string  WhatSpecies4 = _cat.Species4("Tiger");
+            Assert.Equal(WhatSpecies4, "Tiger");
+        }
+
+        [Fact]
+        public void NewName1()
+        {
+            string NewName1 = _cat.ReName1("Fluffy");
+            Assert.Equal(NewName1, "Fluffy");
         }
     }
 }
